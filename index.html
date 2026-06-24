@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Farriel Pratama - Mahasiswa Universitas Semarang (USM) yang berfokus pada IT dan teknologi digital. Lihat portfolio dan CV saya." />
+  <meta name="keywords" content="Farriel Pratama, portfolio, Universitas Semarang, USM, SMK Migas Cepu, mahasiswa, IT" />
+  <meta name="author" content="Farriel Pratama" />
+  <meta property="og:title" content="Farriel Pratama | Portfolio & CV" />
+  <meta property="og:description" content="Mahasiswa Universitas Semarang (USM) yang berfokus pada IT dan teknologi digital." />
+  <meta property="og:type" content="website" />
+  <title>Farriel Pratama | Portfolio & CV</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">RP</span>
+    </div>
+  </div>
+
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;/&gt;</span>
+        <span class="logo-name">Farriel Pratama</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" id="nav-tentang">Tentang</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projek">Projek</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-pengalaman">Pengalaman</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-kontak">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-download" id="btn-download-cv">
+          <i class="fa-solid fa-download"></i>
+          Download CV
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="bg-grid"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Left: Hero Content -->
+      <div class="hero-content" data-aos="fade-right">
+        <div class="available-badge" id="available-badge">
+          <span class="badge-dot"></span>
+          <span>Tersedia untuk peluang baru</span>
+        </div>
+
+        <div class="hero-text">
+          <p class="greeting">Halo, Saya</p>
+          <h1 class="hero-name">
+            Farriel <span class="highlight">Pratama</span>
+          </h1>
+          <p class="hero-title">Mahasiswa Universitas Semarang (USM)</p>
+          <p class="hero-desc">
+            Saya memiliki ketertarikan pada teknologi digital, IT, dan elektronika industri. Selalu antusias untuk mempelajari hal-hal baru dan siap memberikan kontribusi terbaik.
+          </p>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="btn-lihat-proyek">
+            Lihat Proyek Saya
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary" id="btn-hubungi">
+            Hubungi Saya
+            <i class="fa-regular fa-comment-dots"></i>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/banggpratama" target="_blank" class="social-icon" id="social-github" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="social-icon" id="social-linkedin" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/prtm.xd" target="_blank" class="social-icon" id="social-instagram" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:farel1.diva@gmail.com" class="social-icon" id="social-email" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Center: Photo -->
+      <div class="hero-photo-wrapper" data-aos="fade-up">
+        <div class="photo-blob">
+          <img src="assets/img/hero-photo.png" alt="Farriel Pratama - Web Developer" class="hero-photo" id="hero-photo" />
+        </div>
+        <div class="photo-ring ring-1"></div>
+        <div class="photo-ring ring-2"></div>
+        <div class="floating-badge badge-react">
+          <i class="fa-brands fa-react"></i> React
+        </div>
+        <div class="floating-badge badge-node">
+          <i class="fa-brands fa-node-js"></i> Node.js
+        </div>
+      </div>
+
+      <!-- Right: Info Card -->
+      <div class="hero-card" data-aos="fade-left">
+        <!-- About Mini Card -->
+        <div class="info-card about-card">
+          <h3 class="card-title">
+            <i class="fa-solid fa-user-tie card-icon"></i>
+            Tentang Saya
+          </h3>
+          <p class="card-desc">
+            Saya adalah mahasiswa di Universitas Semarang (USM) yang bersemangat mempelajari hal-hal baru. Memiliki latar belakang Teknik Elektronika Industri, saya terbuka untuk berbagai peluang dan beradaptasi dengan cepat.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span class="meta-label">Mahasiswa</span>
+                <span class="meta-value">Universitas Semarang (USM)<br />2025 &ndash; Sekarang</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="meta-label">Semarang, Indonesia</span>
+                <span class="meta-value">Siap bekerja remote / hybrid / onsite</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-terminal"></i>
+              <div>
+                <span class="meta-label">Terbuka untuk</span>
+                <span class="meta-value">Part-time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills + Projects Row -->
+        <div class="card-row">
+          <!-- Skills Mini Card -->
+          <div class="info-card skills-mini-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-chart-bar card-icon"></i>
+              Skills
+            </h3>
+            <div class="skill-bar-mini" id="skill-html">
+              <div class="skill-info">
+                <span>HTML &amp; CSS</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-mini" id="skill-js">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-mini" id="skill-react">
+              <div class="skill-info">
+                <span>React.js</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-mini" id="skill-node">
+              <div class="skill-info">
+                <span>Node.js</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-mini" id="skill-python">
+              <div class="skill-info">
+                <span>Python</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-bar-mini" id="skill-mysql">
+              <div class="skill-info">
+                <span>MySQL</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+            <a href="#skills" class="card-link" id="link-semua-skills">Lihat semua skills <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Projects Mini Card -->
+          <div class="info-card projects-mini-card">
+            <h3 class="card-title">
+              <i class="fa-regular fa-folder-open card-icon"></i>
+              Proyek Terbaru
+            </h3>
+            <div class="project-mini-item" id="proj-mini-1">
+              <img src="assets/img/project-taskhub.png" alt="TaskHub" class="project-mini-img" />
+              <div class="project-mini-info">
+                <h4>TaskHub</h4>
+                <p>Aplikasi manajemen tugas berbasis web dengan fitur kolaborasi tim.</p>
+                <div class="mini-tags">
+                  <span class="tag tag-react">React</span>
+                  <span class="tag tag-node">Node.js</span>
+                  <span class="tag tag-mongo">MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-mini-item" id="proj-mini-2">
+              <img src="assets/img/project-portfolio.png" alt="Portfolio Website" class="project-mini-img" />
+              <div class="project-mini-info">
+                <h4>Portofolio Website</h4>
+                <p>Website portofolio pribadi responsif dan modern.</p>
+                <div class="mini-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-js">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-mini-item" id="proj-mini-3">
+              <img src="assets/img/project-library.png" alt="Sistem Informasi Perpustakaan" class="project-mini-img" />
+              <div class="project-mini-info">
+                <h4>Sistem Informasi Perpustakaan</h4>
+                <p>Sistem informasi perpustakaan berbasis web untuk manajemen buku dan anggota.</p>
+                <div class="mini-tags">
+                  <span class="tag tag-php">PHP</span>
+                  <span class="tag tag-mysql2">MySQL</span>
+                  <span class="tag tag-bootstrap">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <a href="#projects" class="card-link" id="link-semua-proyek">Lihat semua proyek <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" id="stat-projects">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" id="stat-experience">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Tahun Belajar</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" id="stat-technologies">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Teknologi Dikuasai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" id="stat-clients">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Klien Puas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Kemampuan Saya</span>
+        <h2 class="section-title">Skills &amp; <span class="highlight">Teknologi</span></h2>
+        <p class="section-desc">Teknologi dan tools yang saya kuasai untuk membangun produk digital yang luar biasa.</p>
+      </div>
+
+      <div class="skills-content">
+        <!-- Technical Skills -->
+        <div class="skills-bars-container" data-aos="fade-right">
+          <h3 class="skills-subtitle">Technical Skills</h3>
+          <div class="skill-bar-full" id="skill-full-html">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+                <span>HTML &amp; CSS</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="90" style="--bar-color: #e44d26;"></div>
+            </div>
+          </div>
+          <div class="skill-bar-full" id="skill-full-js">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-brands fa-js skill-icon js-icon"></i>
+                <span>JavaScript</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="80" style="--bar-color: #f7df1e;"></div>
+            </div>
+          </div>
+          <div class="skill-bar-full" id="skill-full-react">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-brands fa-react skill-icon react-icon"></i>
+                <span>React.js</span>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="75" style="--bar-color: #61dafb;"></div>
+            </div>
+          </div>
+          <div class="skill-bar-full" id="skill-full-node">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-brands fa-node-js skill-icon node-icon"></i>
+                <span>Node.js</span>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="70" style="--bar-color: #68a063;"></div>
+            </div>
+          </div>
+          <div class="skill-bar-full" id="skill-full-python">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-brands fa-python skill-icon python-icon"></i>
+                <span>Python</span>
+              </div>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="65" style="--bar-color: #3572A5;"></div>
+            </div>
+          </div>
+          <div class="skill-bar-full" id="skill-full-php">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-brands fa-php skill-icon php-icon"></i>
+                <span>PHP</span>
+              </div>
+              <span class="skill-percent">72%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="72" style="--bar-color: #8892be;"></div>
+            </div>
+          </div>
+          <div class="skill-bar-full" id="skill-full-mysql">
+            <div class="skill-header">
+              <div class="skill-name">
+                <i class="fa-solid fa-database skill-icon mysql-icon"></i>
+                <span>MySQL</span>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="bar-track-full">
+              <div class="bar-fill-full" data-width="70" style="--bar-color: #4479a1;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Cards -->
+        <div class="tech-cards-container" data-aos="fade-left">
+          <h3 class="skills-subtitle">Tools &amp; Teknologi</h3>
+          <div class="tech-grid">
+            <div class="tech-card" id="tech-vscode">
+              <i class="fa-solid fa-code tech-icon"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="tech-card" id="tech-git">
+              <i class="fa-brands fa-git-alt tech-icon git-color"></i>
+              <span>Git</span>
+            </div>
+            <div class="tech-card" id="tech-github">
+              <i class="fa-brands fa-github tech-icon"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="tech-card" id="tech-figma">
+              <i class="fa-brands fa-figma tech-icon figma-color"></i>
+              <span>Figma</span>
+            </div>
+            <div class="tech-card" id="tech-bootstrap">
+              <i class="fa-brands fa-bootstrap tech-icon bootstrap-color"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="tech-card" id="tech-mongo">
+              <i class="fa-solid fa-leaf tech-icon mongo-color"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-card" id="tech-tailwind">
+              <i class="fa-solid fa-wind tech-icon tailwind-color"></i>
+              <span>Tailwind</span>
+            </div>
+            <div class="tech-card" id="tech-linux">
+              <i class="fa-brands fa-linux tech-icon"></i>
+              <span>Linux</span>
+            </div>
+            <div class="tech-card" id="tech-docker">
+              <i class="fa-brands fa-docker tech-icon docker-color"></i>
+              <span>Docker</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="soft-skills-container">
+            <h3 class="skills-subtitle" style="margin-top: 2rem;">Soft Skills</h3>
+            <div class="soft-tags">
+              <span class="soft-tag">Problem Solving</span>
+              <span class="soft-tag">Team Collaboration</span>
+              <span class="soft-tag">Communication</span>
+              <span class="soft-tag">Time Management</span>
+              <span class="soft-tag">Critical Thinking</span>
+              <span class="soft-tag">Adaptability</span>
+              <span class="soft-tag">Fast Learner</span>
+              <span class="soft-tag">Creative Thinking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Karya Saya</span>
+        <h2 class="section-title">Proyek <span class="highlight">Terbaru</span></h2>
+        <p class="section-desc">Beberapa proyek yang telah saya kerjakan, dari aplikasi web hingga sistem informasi.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters" data-aos="fade-up">
+        <button class="filter-btn active" id="filter-all" data-filter="all">Semua</button>
+        <button class="filter-btn" id="filter-web" data-filter="web">Web App</button>
+        <button class="filter-btn" id="filter-fullstack" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" id="filter-ui" data-filter="ui">UI/UX</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="fullstack" data-aos="fade-up" id="project-1">
+          <div class="project-img-wrapper">
+            <img src="assets/img/project-taskhub.png" alt="TaskHub" class="project-img" />
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="#" class="overlay-btn" id="proj1-demo" aria-label="Live Demo">
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="overlay-btn overlay-btn-outline" id="proj1-code" aria-label="Source Code">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <h3 class="project-name">TaskHub</h3>
+            <p class="project-desc">Aplikasi manajemen tugas berbasis web dengan fitur kolaborasi tim, real-time update, dan notifikasi push.</p>
+            <div class="project-tags">
+              <span class="tag tag-react">React</span>
+              <span class="tag tag-node">Node.js</span>
+              <span class="tag tag-mongo">MongoDB</span>
+              <span class="tag tag-socket">Socket.io</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card featured-card" data-category="web" data-aos="fade-up" data-aos-delay="100" id="project-2">
+          <div class="featured-label">Featured</div>
+          <div class="project-img-wrapper">
+            <img src="assets/img/project-portfolio.png" alt="Portfolio Website" class="project-img" />
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="#" class="overlay-btn" id="proj2-demo" aria-label="Live Demo">
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="overlay-btn overlay-btn-outline" id="proj2-code" aria-label="Source Code">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">02</div>
+            <h3 class="project-name">Portofolio Website</h3>
+            <p class="project-desc">Website portofolio pribadi yang responsif, modern, dengan animasi halus dan desain premium.</p>
+            <div class="project-tags">
+              <span class="tag tag-html">HTML</span>
+              <span class="tag tag-css">CSS</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="200" id="project-3">
+          <div class="project-img-wrapper">
+            <img src="assets/img/project-library.png" alt="Sistem Informasi Perpustakaan" class="project-img" />
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="#" class="overlay-btn" id="proj3-demo" aria-label="Live Demo">
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="overlay-btn overlay-btn-outline" id="proj3-code" aria-label="Source Code">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">03</div>
+            <h3 class="project-name">Sistem Informasi Perpustakaan</h3>
+            <p class="project-desc">Sistem informasi perpustakaan berbasis web untuk manajemen buku, anggota, dan peminjaman.</p>
+            <div class="project-tags">
+              <span class="tag tag-php">PHP</span>
+              <span class="tag tag-mysql2">MySQL</span>
+              <span class="tag tag-bootstrap">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta" data-aos="fade-up">
+        <a href="https://github.com/banggpratama" target="_blank" class="btn-outline-primary" id="btn-github-all">
+          <i class="fa-brands fa-github"></i>
+          Lihat Semua di GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="experience-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Perjalanan Saya</span>
+        <h2 class="section-title">Pendidikan &amp; <span class="highlight">Pengalaman</span></h2>
+        <p class="section-desc">Timeline perjalanan akademis dan pengalaman profesional saya.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Education -->
+        <div class="timeline-col" data-aos="fade-right">
+          <h3 class="timeline-heading">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Pendidikan
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item" id="edu-1">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2025 &ndash; Sekarang</span>
+                <h4>Mahasiswa S1</h4>
+                <p class="timeline-place">Universitas Semarang (USM)</p>
+                <p class="timeline-desc">Menempuh pendidikan tinggi dengan fokus pada pengembangan diri dan akademik. IPK: 4.00</p>
+                <div class="timeline-tags">
+                  <span class="tag tag-react">Akademik</span>
+                  <span class="tag tag-node">IT</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item" id="edu-2">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2022 &ndash; 2025</span>
+                <h4>Teknik Elektronika Industri</h4>
+                <p class="timeline-place">SMK Migas Cepu</p>
+                <p class="timeline-desc">Fokus pada sistem kontrol kelistrikan industri, PLC, instalasi motor listrik, dan pemrograman mikrokontroler.</p>
+                <div class="timeline-tags">
+                  <span class="tag tag-html">Elektronika</span>
+                  <span class="tag tag-js">Industri</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="timeline-col" data-aos="fade-left">
+          <h3 class="timeline-heading">
+            <i class="fa-solid fa-briefcase"></i>
+            Pengalaman
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item" id="exp-1">
+              <div class="timeline-dot active-dot"></div>
+              <div class="timeline-card active-card">
+                <span class="timeline-year">2024</span>
+                <h4>IT Support</h4>
+                <p class="timeline-place">PT. Nayati Indonesia</p>
+                <p class="timeline-desc">Melakukan pemeliharaan sistem IT, troubleshooting perangkat keras dan lunak, serta konfigurasi jaringan untuk mendukung kelancaran operasional perusahaan.</p>
+                <div class="timeline-tags">
+                  <span class="tag tag-react">Support</span>
+                  <span class="tag tag-node">Hardware</span>
+                  <span class="tag tag-mysql2">Network</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item" id="exp-2">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2024</span>
+                <h4>Assembling</h4>
+                <p class="timeline-place">PT. Bambang Djaja</p>
+                <p class="timeline-desc">Bertanggung jawab dalam proses perakitan komponen kelistrikan dan mekanikal transformator sesuai standar operasional prosedur.</p>
+                <div class="timeline-tags">
+                  <span class="tag tag-php">Assembling</span>
+                  <span class="tag tag-css">Elektro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Hubungi Saya</span>
+        <h2 class="section-title">Mari <span class="highlight">Berkolaborasi</span></h2>
+        <p class="section-desc">Punya proyek menarik atau peluang kerja? Jangan ragu untuk menghubungi saya!</p>
+      </div>
+
+      <div class="contact-content">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card" id="contact-email-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:farel1.diva@gmail.com" id="contact-email-link">farel1.diva@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-wa-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/6285141027945" target="_blank" id="contact-wa-link">085141027945</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4>Lokasi</h4>
+              <p>Semarang, Jawa Tengah, Indonesia</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <h4>Ikuti Saya</h4>
+            <div class="social-links">
+              <a href="https://github.com/banggpratama" target="_blank" class="social-link-big" id="contact-github" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" class="social-link-big" id="contact-linkedin" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/prtm.xd" target="_blank" class="social-link-big" id="contact-instagram" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/6285141027945" target="_blank" class="social-link-big" id="contact-whatsapp" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form" data-aos="fade-left" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Nama Lengkap</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="contact-name" name="name" placeholder="Masukkan nama Anda" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="contact-email" name="email" placeholder="Masukkan email Anda" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subjek</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <input type="text" id="contact-subject" name="subject" placeholder="Subjek pesan" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Pesan</label>
+            <div class="input-wrapper textarea-wrapper">
+              <i class="fa-regular fa-comment-dots"></i>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit" id="btn-submit-form">
+            <span class="btn-text">Kirim Pesan</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fa-solid fa-circle-check"></i>
+            Pesan berhasil dikirim! Saya akan segera menghubungi Anda.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;/&gt;</span>
+            <span class="logo-name">Farriel Pratama</span>
+          </a>
+          <p>Mahasiswa Universitas Semarang (USM) yang bersemangat mempelajari teknologi digital dan IT.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#home">Tentang</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="mailto:farel1.diva@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a></li>
+            <li><a href="https://wa.me/6285141027945"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/banggpratama" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Farriel Pratama. Dibuat dengan <i class="fa-solid fa-heart" style="color:#ef4444;"></i> dan <i class="fa-solid fa-mug-hot" style="color:#d97706;"></i></p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
